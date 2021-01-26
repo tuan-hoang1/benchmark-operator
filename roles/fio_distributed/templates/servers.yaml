@@ -32,7 +32,7 @@ spec:
         securityContext:
           privileged: true
 {% endif %}
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/fio:latest') }}
+        image: {{ workload_args.image | default('quay.io/piyushgupta1551/fio-m:ppc64le') }}
         imagePullPolicy: Always
         ports:
           - containerPort: 8765

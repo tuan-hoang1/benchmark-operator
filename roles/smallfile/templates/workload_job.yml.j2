@@ -34,7 +34,7 @@ spec:
           securityContext:
             privileged: true
 {% endif %}
-          image: {{ workload_args.image | default('quay.io/cloud-bulldozer/smallfile:master') }}
+          image: {{ workload_args.image | default('quay.io/piyushgupta1551/smallfile-m:ppc64le') }}
           imagePullPolicy: Always
           command: ["/bin/sh", "-c"]
           workingDir: /opt/snafu

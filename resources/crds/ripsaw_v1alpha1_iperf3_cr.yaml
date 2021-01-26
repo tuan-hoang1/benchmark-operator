@@ -7,6 +7,7 @@ spec:
   workload:
     name: iperf3
     args:
+      image: "quay.io/multiarch-k8s-e2e/iperf:1.0-ppc64le"
       pairs: 1
       port: 5201
       transmit_type: time

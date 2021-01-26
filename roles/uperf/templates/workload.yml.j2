@@ -41,7 +41,7 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: benchmark
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/uperf:latest') }}
+        image: {{ workload_args.image | default('quay.io/piyushgupta1551/uperf-m:ppc64le') }}
         env:
           - name: uuid
             value: "{{ uuid }}"

@@ -11,6 +11,6 @@ spec:
   workload:
     name: byowl
     args:
-      image: "quay.io/jtaleric/uperf:testing"
+      image: "quay.io/piyushgupta1551/uperf-m:ppc64le"
       clients: 1
       commands: "echo Test"

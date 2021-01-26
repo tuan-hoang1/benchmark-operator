@@ -5,13 +5,14 @@ metadata:
   namespace: my-ripsaw
 spec:
   clustername: myk8scluster
-  elasticsearch:
-    url: http://es.server.com:80
+  #elasticsearch:
+  #  url: http://es.server.com:80
   #test_user: username_to_attach_to_metadata
   workload:
     # cleanup: true
     name: uperf
     args:
+      image: quay.io/piyushgupta1551/uperf-m:ppc64le
       serviceip: false
       hostnetwork: false
       networkpolicy: false

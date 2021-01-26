@@ -6,11 +6,12 @@ metadata:
 spec:
   test_user: homer_simpson
   clustername: aws-2009-09-10
-  elasticsearch:
-    url: http://my.elasticsearch.server:9200
+  #elasticsearch:
+  #  url: http://my.elasticsearch.server:9200
   workload:
     name: smallfile
     args:
+      image: quay.io/piyushgupta1551/smallfile-m:ppc64le
       clients: 1
       samples: 1
       operation: ["create", "read"]
