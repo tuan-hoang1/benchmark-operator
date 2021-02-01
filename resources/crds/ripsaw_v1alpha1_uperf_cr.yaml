@@ -11,7 +11,7 @@ spec:
     # cleanup: true
     name: uperf
     args:
-      image: quay.io/tuan_hoang1/uperf_wrapper:master
+      image: quay.io/tuan_hoang1/uperf_wrapper:latest
       serviceip: false
       hostnetwork: true
       pin: true

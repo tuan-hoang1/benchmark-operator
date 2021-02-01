@@ -9,7 +9,7 @@ spec:
     name: iperf3
     args:
       pairs: 1
-      image: quay.io/tuan_hoang1/iperf:master
+      image: quay.io/tuan_hoang1/iperf:latest
       hostnetwork: true
       pin: true
       pin_server: "master-0.zocp.ibm.com"

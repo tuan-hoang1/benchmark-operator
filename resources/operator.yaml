@@ -34,14 +34,14 @@ spec:
           - /usr/local/bin/ao-logs
           - /tmp/ansible-operator/runner
           - stdout
-          image: quay.io/tuan_hoang1/benchmark-operator:master
+          image: quay.io/tuan_hoang1/benchmark-operator:latest
           imagePullPolicy: "Always"
           volumeMounts:
           - mountPath: /tmp/ansible-operator/runner
             name: runner
             # readOnly: true
         - name: benchmark-operator
-          image: quay.io/tuan_hoang1/benchmark-operator:master
+          image: quay.io/tuan_hoang1/benchmark-operator:latest
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
@@ -62,7 +62,7 @@ spec:
           - mountPath: /tmp/ansible-operator/runner
             name: runner
         - name: redis-master
-          image: docker.io/s390x/redis:master
+          image: docker.io/s390x/redis:latest
           env:
             - name: MASTER
               value: "true"

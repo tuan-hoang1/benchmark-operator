@@ -94,7 +94,7 @@
             spec:
               containers:
                 - name: publisher-container
-                  image: quay.io/tuan_hoang1/fs_drift_wrapper:master
+                  image: quay.io/tuan_hoang1/fs_drift_wrapper:latest
                   tty: true
                   command: ["/bin/sh", "-c"]
                   workingDir: /root/fs-drift-master/

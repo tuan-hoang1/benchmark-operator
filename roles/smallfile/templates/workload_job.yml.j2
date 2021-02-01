@@ -34,7 +34,7 @@ spec:
           securityContext:
             privileged: true
 {% endif %}
-          image: {{ workload_args.image | default('quay.io/tuan_hoang1/smallfile_wrapper:master') }}
+          image: {{ workload_args.image | default('quay.io/tuan_hoang1/smallfile_wrapper:latest') }}
           imagePullPolicy: Always
           command: ["/bin/sh", "-c"]
           workingDir: /opt/snafu
