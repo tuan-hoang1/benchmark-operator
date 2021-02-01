@@ -16,7 +16,7 @@ spec:
 {% endif %}
       containers:
       - name: fio-client
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/fio:latest') }}
+        image: {{ workload_args.image | default('quay.io/tuan_hoang1/fio_wrapper:latest') }}
         imagePullPolicy: Always
         env:
           - name: uuid

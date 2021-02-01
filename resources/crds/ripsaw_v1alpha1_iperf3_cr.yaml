@@ -4,18 +4,24 @@ metadata:
   name: iperf3-benchmark
   namespace: my-ripsaw
 spec:
+  metadata_collection: false
   workload:
     name: iperf3
     args:
       pairs: 1
+      image: quay.io/tuan_hoang1/iperf:master
+      hostnetwork: true
+      pin: true
+      pin_server: "master-0.zocp.ibm.com"
+      pin_client: "master-2.zocp.ibm.com"
       port: 5201
       transmit_type: time
       transmit_value: 60
       omit_start: 0
       length_buffer: 128K
-      window_size: 64k
+      window_size: 256k
       ip_tos: 0
-      mss: 900
-      streams: 1
+      mss: 1410
+      streams: 8
       extra_options_server: '--forceflush '
       extra_options_client: '-R '

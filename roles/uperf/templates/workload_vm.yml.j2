@@ -74,7 +74,7 @@ spec:
           - ethtool -L eth0 combined {{ workload_args.client_vm.network.multiqueue.queues }}
 {% endif %}
           - dnf install -y uperf redis git
-          - pip install git+https://github.com/cloud-bulldozer/benchmark-wrapper
+          - pip install git+https://github.com/tuan-hoang1/benchmark-wrapper
           - bash /tmp/uperf_script/run_script.sh
     name: cloudinitdisk
   - configMap:

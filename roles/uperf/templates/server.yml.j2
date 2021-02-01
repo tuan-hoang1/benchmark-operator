@@ -26,7 +26,7 @@ spec:
 {% endif %}
       containers:
       - name: benchmark
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/uperf:latest') }}
+        image: {{ workload_args.image | default('quay.io/tuan_hoang1/uperf_wrapper:latest') }}
 {% if workload_args.server_resources is defined %}
         resources: {{ workload_args.server_resources | to_json }}
 {% endif %}

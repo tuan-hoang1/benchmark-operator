@@ -34,14 +34,14 @@ spec:
           - /usr/local/bin/ao-logs
           - /tmp/ansible-operator/runner
           - stdout
-          image: quay.io/benchmark-operator/benchmark-operator:master
+          image: quay.io/tuan_hoang1/benchmark-operator:master
           imagePullPolicy: "Always"
           volumeMounts:
           - mountPath: /tmp/ansible-operator/runner
             name: runner
-            readOnly: true
+            # readOnly: true
         - name: benchmark-operator
-          image: quay.io/benchmark-operator/benchmark-operator:master
+          image: quay.io/tuan_hoang1/benchmark-operator:master
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
@@ -62,7 +62,7 @@ spec:
           - mountPath: /tmp/ansible-operator/runner
             name: runner
         - name: redis-master
-          image: k8s.gcr.io/redis:v1
+          image: docker.io/s390x/redis:master
           env:
             - name: MASTER
               value: "true"
@@ -74,6 +74,8 @@ spec:
           volumeMounts:
             - mountPath: /redis-master-data
               name: data
+      imagePullSecrets:
+        - name: my-artifactory-image-pull-secret
       volumes:
         - name: data
           emptyDir: {}
