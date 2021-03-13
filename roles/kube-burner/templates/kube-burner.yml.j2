@@ -28,7 +28,7 @@ spec:
 {% endif %}
       containers:
       - name: kube-burner
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/kube-burner:latest') }}
+        image: {{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:kube-burner') }}
         imagePullPolicy: Always
         workingDir: /tmp/kube-burner
         command: ["/bin/sh", "-c"]

@@ -20,7 +20,7 @@ spec:
       #  effect: NoSchedule
       containers:
       - name: kernel-cache-dropper
-        image: quay.io/cloud-bulldozer/kernel_cache_dropper:latest
+        image: quay.io/multi-arch/cloud-bulldozer:kernel_cache_dropper
         imagePullPolicy: Always
         ports:
         - containerPort: {{ kernel_cache_drop_svc_port }}

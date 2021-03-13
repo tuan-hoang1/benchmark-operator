@@ -15,7 +15,7 @@ spec:
       ttlSecondsAfterFinished: 600
       containers:
       - name: oslat
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/oslat:latest') }}
+        image: {{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:oslat') }}
         command: ["/bin/sh", "-c"]
         args: ["run_snafu --tool oslat -p /tmp/oslat.sh -u {{ uuid }} --user {{test_user | default("ripsaw")}}"]
         imagePullPolicy: Always

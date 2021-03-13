@@ -17,7 +17,7 @@ spec:
 {% endif %}
       containers:
       - name: ycsb
-        image: "{{ workload_args.image | default('quay.io/cloud-bulldozer/ycsb-server:latest') }}"
+        image: "{{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:ycsb-server') }}"
         imagePullPolicy: Always
         env:
         - name: clustername

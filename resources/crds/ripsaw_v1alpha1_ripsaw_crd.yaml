@@ -69,7 +69,7 @@ spec:
                     default: false
                     type: boolean
                   image:
-                    default: "quay.io/cloud-bulldozer/backpack:latest"
+                    default: "quay.io/multi-arch/cloud-bulldozer:backpack"
                     type: string
                   label:
                     type: object

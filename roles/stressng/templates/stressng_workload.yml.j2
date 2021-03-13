@@ -20,7 +20,7 @@ spec:
 {% endif %}
       containers:
       - name: stressng
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/stressng:latest') }}
+        image: {{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:stressng') }}
         imagePullPolicy: Always
         env:
           - name: uuid

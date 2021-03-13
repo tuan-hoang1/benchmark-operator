@@ -11,7 +11,7 @@ spec:
   workload:
     name: "pgbench"
     args:
-      image: quay.io/piyushgupta1551/pgbench-m:ppc64le
+      image: quay.io/multi-arch/cloud-bulldozer:pgbench
 
       ## Standard pgbench command options. See pgbench(1).
       # Note: clients is provided as a list of client counts to iterate through in multiple tests.

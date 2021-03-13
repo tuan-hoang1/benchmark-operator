@@ -13,6 +13,6 @@ spec:
   workload:
     name: byowl
     args:
-      image: "quay.io/piyushgupta1551/uperf-m:ppc64le"
+      image: "quay.io/multi-arch/cloud-bulldozer:uperf"
       clients: 1
       commands: "echo Test"

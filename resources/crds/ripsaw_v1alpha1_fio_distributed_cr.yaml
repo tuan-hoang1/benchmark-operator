@@ -12,7 +12,7 @@ spec:
   workload:
     name: "fio_distributed"
     args:
-      image: quay.io/piyushgupta1551/fio-m:ppc64le
+      image: quay.io/multi-arch/cloud-bulldozer:fio
       # if true, do large sequential write to preallocate volume before using
       prefill: true
       # for compressed volume uncomment the next line and make the cmp_bs same as bs

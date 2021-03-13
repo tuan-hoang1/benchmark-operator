@@ -11,7 +11,7 @@ spec:
   workload:
     name: smallfile
     args:
-      image: quay.io/piyushgupta1551/smallfile-m:ppc64le
+      image: quay.io/multi-arch/cloud-bulldozer:smallfile
       clients: 1
       samples: 1
       operation: ["create", "read"]

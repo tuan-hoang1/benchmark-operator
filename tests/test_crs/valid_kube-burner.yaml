@@ -24,7 +24,7 @@ spec:
       pin_server: {"node-role.kubernetes.io/worker": ""}
       wait_when_finished: true
       pod_wait: false
-      image: quay.io/cloud-bulldozer/kube-burner:latest
+      image: quay.io/multi-arch/cloud-bulldozer:kube-burner
       qps: 25
       burst: 50
       log_level: info

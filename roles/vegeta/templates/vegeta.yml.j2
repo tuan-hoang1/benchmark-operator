@@ -31,7 +31,7 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: vegeta
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/vegeta:latest') }}
+        image: {{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:vegeta') }}
         env:
           - name: uuid
             value: "{{ uuid }}"

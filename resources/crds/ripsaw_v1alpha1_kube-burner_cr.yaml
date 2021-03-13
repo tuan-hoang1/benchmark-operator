@@ -33,7 +33,7 @@ spec:
       # Wait for all pods to be running before moving forward to the next job iteration
       pod_wait: false
       # Use a custom kube-burner image
-      image: quay.io/cloud-bulldozer/kube-burner:latest
+      image: quay.io/multi-arch/cloud-bulldozer:kube-burner
       # Queries per second
       qps: 25
       # Max number of burst queries to perform

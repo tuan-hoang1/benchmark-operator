@@ -12,7 +12,7 @@ spec:
     # cleanup: true
     name: uperf
     args:
-      image: quay.io/piyushgupta1551/uperf-m:ppc64le
+      image: quay.io/multi-arch/cloud-bulldozer:uperf
       serviceip: false
       hostnetwork: false
       networkpolicy: false

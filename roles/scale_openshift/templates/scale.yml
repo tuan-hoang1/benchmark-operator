@@ -33,7 +33,7 @@ spec:
 {% endif %}
       containers:
       - name: scale
-        image: {{ workload_args.image | default('quay.io/cloud-bulldozer/scale_openshift:latest') }}
+        image: {{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:scale_openshift') }}
         imagePullPolicy: Always
         env:
           - name: uuid
