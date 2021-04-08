@@ -94,7 +94,7 @@
             spec:
               containers:
                 - name: publisher-container
-                  image: "{{ workload_args.image | default('quay.io/piyushgupta1551/smallfile-m:ppc64le') }}"
+                  image: "{{ workload_args.image | default('quay.io/multi-arch/cloud-bulldozer:smallfile') }}"
                   tty: true
                   command: ["/bin/sh", "-c"]
                   workingDir: /root/smallfile-master/
