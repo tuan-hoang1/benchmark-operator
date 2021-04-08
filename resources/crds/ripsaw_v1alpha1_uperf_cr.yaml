@@ -4,7 +4,6 @@ metadata:
   name: uperf-benchmark
   namespace: my-ripsaw
 spec:
-  metadata_collection: false
   clustername: myk8scluster
   #test_user: username_to_attach_to_metadata
   workload:

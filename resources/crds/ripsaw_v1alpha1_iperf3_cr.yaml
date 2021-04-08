@@ -4,7 +4,6 @@ metadata:
   name: iperf3-benchmark
   namespace: my-ripsaw
 spec:
-  metadata_collection: false
   workload:
     name: iperf3
     args:
